@@ -18,7 +18,7 @@ REM set EDT_VERSION=8.3.x
 
 edt-export-and-validate.bat PATH_TO_REPOSITORY
 ```
-
+> Примечание: требуется установленное приложение oscript `stebi` 
 ---
 
 ### Запуск анализа сканером сонаркуба

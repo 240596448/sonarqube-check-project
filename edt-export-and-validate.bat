@@ -52,8 +52,7 @@ call ring edt@%EDT_VERSION% workspace validate --workspace-location "%WORKSPACE%
 
 @ECHO ------------ Проверка завершена %date% - %time% ------------
 
-call edt-export-bugs c "%EDT%\edt-result.out" "%EDT%\edt-report.json" "%ROOT%\src"
+call stebi c "%EDT%\edt-result.out" "%EDT%\edt-report.json" "%ROOT%\src"
 
 @rd /S /Q "%WORKSPACE%"
 @rd /S /Q "%PROJECT_PATH%"
-@DEL "%EDT_VALIDATION_RESULT%"
