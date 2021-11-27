@@ -10,7 +10,7 @@
 - `EDT_PROJECT_VERSION` - версия EDT
 - `EDT_VERSION` - версия 1C
 
-Путь к репозиторию абсолютный или относительный
+Путь к репозиторию `PATH_TO_REPOSITORY` абсолютный или относительный
 
 ```cmd
 REM set EDT_PROJECT_VERSION=202x.x.x
@@ -27,11 +27,11 @@ edt-export-and-validate.bat PATH_TO_REPOSITORY
 - `SONAR_TOKEN` - (обязательно, secret) токен доступа к серверу SonarQube
 - `PATH_SONAR_SCANNER` - путь к сканеру сонаркуба, если путь не задан в `PATH`
 
-Путь к репозиторию абсолютный или относительный
+Путь к репозиторию `PATH_TO_REPOSITORY` абсолютный или относительный
 
 ```cmd
 REM @set SONAR_TOKEN=00000000000000000000000000
 REM set PATH_SONAR_SCANNER=c:\tools\sonar-scaner\bin\
 
-edt-export-and-validate.bat PATH_TO_REPOSITORY
+sonar-check.bat PATH_TO_REPOSITORY
 ```
