@@ -52,6 +52,7 @@ call ring edt@%EDT_VERSION% workspace validate --workspace-location "%WORKSPACE%
 
 @ECHO ------------ Проверка завершена %date% - %time% ------------
 
+@ECHO Экспорт результатов отчета в формат отчета sonarqube:
 call stebi c "%EDT%\edt-result.out" "%EDT%\edt-report.json" "%ROOT%\src"
 
 @rd /S /Q "%WORKSPACE%"
